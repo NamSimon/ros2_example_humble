@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            ros2_topic_pub = ros2_topic_pub.ros2_topic_pub:main',
+            'ros2_topic_pub = ros2_topic_pub.ros2_topic_pub:main',
         ],
     },
 )

@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'ros2_action_client = ros2_action_client.ros2_action_client:main',
         ],
     },
 )

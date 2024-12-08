@@ -11,7 +11,7 @@ class ExampleTopicSub(Node):
     def listener_callback(self,msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
-def main(args)
+def main(args):
     rclpy.init(args=args)
     node=ExampleTopicSub()
     rclpy.spin(node)
