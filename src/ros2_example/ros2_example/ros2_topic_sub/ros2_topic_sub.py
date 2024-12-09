@@ -15,7 +15,7 @@ class ExampleTopicSub(Node):
         # 콜백함수 토픽에서 메세지를 수신 되면 호출
         self.get_logger().info('I heard: "%s"' % msg.data)# ROS2에서 로그를 출력하는 함수
 
-def main(args):
+def main(args=None):
     rclpy.init(args=args)#ROS2 초기화
     node=ExampleTopicSub()# subscribe 노드 생성
     rclpy.spin(node)# 실행 반복
